@@ -115,14 +115,7 @@ $("#init").click(function(){
 	questionNum = 0;
 	nextQuestionId = 0;
 	currentData = null;
-	$("#resolveSec").hide();
   currentData = callData(1);
-  $("#question").hide();
-  $("#questionNum").hide();
-  $("#restart").fadeOut();
-  $("#resolve").fadeOut("normal", function(){
-  	$("#check").fadeIn();
-  });
   showQuestion(currentData);
 });
 
