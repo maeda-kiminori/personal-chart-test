@@ -90,7 +90,8 @@ function getJSON() {
 //『はい』を選択した際の動き
 $("#yes").click(function(){
 	nextQuestionId = currentData["yes"];
-	currentData = callData(nextQuestionId);
+  currentData = callData(nextQuestionId);
+  console.log(currentData);
 	if(currentData["isGoal"] == true) {
 		showResolve(currentData);
 		return;
